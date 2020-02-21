@@ -40,11 +40,21 @@ Demonstrate your understanding of this week's concepts by answering the followin
 
 - [ ] Explain the difference between `Relational Databases` and `SQL`.
 
+  SQL is the "language" used to do CRUD operations into a db or db management system.
+  Relational Databases are particular type of database that use relational tables to connect data that is relational in some manner to each other. 
+  
+
 - [ ] Why do tables need a `primary key`?
+
+  tables need primary keys to ensure row-level accessibility. It basically gives each row a unique identifier so that no other row in the table conflicts with it when data is being retrieved.
 
 - [ ] What is the name given to a table column that references the primary key on another table.
 
+  That table column is called a foreign key. it typically references the id or unique identifier of a differnt table thus connecting the two table together.
+
 - [ ] What do we need in order to have a _many to many_ relationship between two tables.
+
+   More than 3 tables and multiple foreign keys in the "transaction" or the table that joins all the other tables together. 
 
 ## Minimum Viable Product
 
