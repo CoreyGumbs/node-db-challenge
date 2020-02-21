@@ -1,7 +1,7 @@
 
 exports.up = function(knex) {
-  knex.schema.createTable('project_resources', tbl => {
-      tbl.primary(['project_id', 'resources_id']);
+    return knex.schema.createTable('project_resources', tbl => {
+      tbl.primary(['project_id', 'resource_id']);
 
       //project fk
       tbl.integer('project_id')
@@ -24,5 +24,5 @@ exports.up = function(knex) {
 };
 
 exports.down = function(knex) {
-  knex.schema.dropTableIfExists('project_resources');
+    return knex.schema.dropTableIfExists('project_resources');
 };
